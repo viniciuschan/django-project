@@ -4,6 +4,6 @@ from django.contrib import admin
 from intro import views
 
 urlpatterns = [
-    url(r'', include('intro.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'', include('intro.urls')),
 ]
